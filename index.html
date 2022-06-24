@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2005e6462e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="click.js"></script>
+</head>
+<body>
+
+    <div class="wrap" id="wrap">
+        <h1>PORTFOLIO <span>Studying Canvas</span></h1>
+
+        <ul class="auto">
+            <li class="btnStart">
+                <i class="fab fa-instagram"></i>
+            </li>
+            <li class="btnStop">
+                <i class="fab fa-twitter"></i>
+            </li>
+        </ul>
+
+      <div class="swiper-wrapper">
+        <div  class="swiper-slide">
+          <div class="inner">
+            <div class="con">
+              <h2>Pixelate</h2>
+              <p>Click anywhere on the screen. Mr. Van Gogh will turn into pixel.</p>
+              <a href="https://bunnywoods.github.io/pixelate/"><img src="img/pix2.png" alt="" onclick="clickBtn();" border="0"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner">
+            <div class="con">
+              <h2>Drag Rect</h2>
+              <p>Drag & Drop the square figure. The guideline will appear.</p>
+              <a href="https://bunnywoods.github.io/drag-rect/"><img src="img/drag.png" alt="" onclick="clickBtn();" border="0"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner">
+            <div class="con">
+              <h2>Wave layer</h2>
+              <p>This is the most simple expression for wave. It has three layers of lines agitating up and down.</p>
+              <a href="https://bunnywoods.github.io/wave/"><img src="img/wave.png" alt="" onclick="clickBtn();" border="0"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner">
+            <div class="con">
+              <h2>Sling-Shot</h2>
+              <p>Drag on your screen and you can shoot balls. You can also input the numbers of the balls on below.</p>
+              <a href="https://bunnywoods.github.io/slingshot/"><img src="img/sling.png" alt="" onclick="clickBtn();" border="0"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner">
+            <div class="con">
+              <h2>Bouncing Ball</h2>
+              <p>The ball bounces off your screen. You can reduce or increase the screen.</p>
+              <a href="https://bunnywoods.github.io/bouncing-ball/"><img src="img/ball.png" alt="" onclick="clickBtn();" border="0"/></a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+
+
+    <script>
+        var swiper = new Swiper(".wrap", {
+          effect: "cards",
+          grabCursor: true,
+          slidesPerView: "auto",
+          centeredSlides: true,
+          speed: 500,
+        });
+        
+      </script>
+</body>
+</html>
